@@ -1,0 +1,13 @@
+.HeaderBar {
+    display: flex;
+    height: 30px;
+    padding: 20px;
+    line-height: 40px;
+    background-color: #263238;
+    align-items: center;
+}
+.AppLogo {
+    color:#fff;
+    font-size: 18px;
+    vertical-align: middle;
+}
