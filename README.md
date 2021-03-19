@@ -1,3 +1,5 @@
+
+# Note: new repository initiated as the previous repository Chirag-debug/image-viewer couldnt complete as the Macbook got corrupt from which old commits were manged. This new repository is used in another Windows system and the old code base from the Macbook is copied in Windows system.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
