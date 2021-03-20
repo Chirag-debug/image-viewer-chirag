@@ -18,18 +18,15 @@ class Login extends Component {
             usernameRequired: "dispNone",
             passwordRequired: "dispNone",
             incorrectCredentials: "dispNone",
-            flag: false,
         };
     }
 
     usernameChangeHandler = (e) => {
         this.setState({username: e.target.value})
-        console.log(this.state.username);
     }
 
     passwordChangeHandler = (e) => {
-        this.setState({username: e.target.value})
-        console.log(this.state.loginPassword);
+        this.setState({loginPassword: e.target.value})
     }
 
     loginClickHandler = () => {
@@ -45,8 +42,7 @@ class Login extends Component {
             this.state.loginPassword === password
         ) {
             window.sessionStorage.setItem("access-token", accessToken);
-            // this.props.history.push("/home");
-            this.setState({flag: true});
+            this.props.history.push("/home");
 
         } else {
             if (this.state.username !== "" && this.state.loginPassword !== "") {
@@ -57,8 +53,6 @@ class Login extends Component {
 
     render() {
         return (
-        <div>
-        {this.state.flag === true ? <Redirect to = "/home"/> :
             <div>
                 <Header/>
                 <div className="PageBody">
@@ -85,8 +79,6 @@ class Login extends Component {
                     </Card>
                 </div>
             </div>
-        }
-        </div>
         );
     }
 }
