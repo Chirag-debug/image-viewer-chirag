@@ -11,3 +11,22 @@
     font-size: 18px;
     vertical-align: middle;
 }
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .proImg {
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .profile-image {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+  }

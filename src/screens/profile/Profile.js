@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Profile.css';
-import '../../common/header/Header';
+import Header from '../../common/header/Header';
 
 class Profile extends Component {
     render() {

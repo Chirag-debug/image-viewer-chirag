@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Login from './screens/login/Login';
-import Home from './screens/home/Home';
-import Home from './screens/profile/Profile';
+import Login from './login/Login';
+import Home from './home/Home';
+import Profile from './profile/Profile';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 
