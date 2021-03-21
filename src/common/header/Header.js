@@ -111,6 +111,7 @@ class Header extends Component {
           >
             Image Viewer
           </span>
+          
           <div>
             {this.props.home === "true" || this.props.profile === "true" ? (
               <div className="proImg">
@@ -164,6 +165,7 @@ class Header extends Component {
               ""
             )}
           </div>
+
           <div>
             {this.props.home === "true" ? (
               <div className={classes.search}>
@@ -185,6 +187,7 @@ class Header extends Component {
               ""
             )}
           </div>
+          
         </header>
       </div>
     );

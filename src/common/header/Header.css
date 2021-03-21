@@ -7,9 +7,11 @@
     align-items: center;
 }
 .AppLogo {
-    color:#fff;
+    color: #fff;
     font-size: 18px;
-    vertical-align: middle;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .icon {
