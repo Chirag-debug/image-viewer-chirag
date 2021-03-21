@@ -1,15 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Login from './screens/login/Login';
-import Home from './screens/home/Home';
 import Controller from './screens/Controller';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Controller />
-  </React.StrictMode>,
+    <Controller />,
   document.getElementById('root')
 );
 
