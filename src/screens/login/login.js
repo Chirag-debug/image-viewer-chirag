@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 import Input from '@material-ui/core/Input';
 import Header from '../../common/header/Header';
 import {FormHelperText} from '@material-ui/core';
-import {Redirect} from 'react-router-dom';
+
 
 class Login extends Component {
     constructor() {
@@ -35,7 +35,7 @@ class Login extends Component {
 
         let username = "username";
         let password = "password";
-        let accessToken = "IGQVJWbGpMajhhNHBiWjg5X0NsQjhkYlV4eFNFbXVueVBOTmh3VFNRQkx5ZAjF6OHgtMVUwZAl9rQzBWdTAtcDh1eG1pbElVazVvb3ZAfRzVfR21UcmpUeXZAxeERHZA19Bb1cxRnJDdEJvUmtjTjNEOHJXZAQZDZD";
+        let accessToken = "IGQVJWTFRQVFRzT3BGM1lCWktjWkZAHUmNDVjFnQ3NVdXk4Vy0zcnNFcXpydTZAldXlxRlVaM0xNNFVKN0hiRXpZAX21YUGtGWmhoYzVjQkdiREFHREZAiUHlTUmNheENkNS1SYU5MZA2tTcWVUeEZAnMDk5cAZDZD";
         this.setState({ incorrectCredentials: "dispNone" });
         if (
             this.state.username === username &&
