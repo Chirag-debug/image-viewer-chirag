@@ -50,7 +50,6 @@ class Home extends Component {
                 that.setState({
                     endpoint1: JSON.parse(this.responseText).data,
                 });
-                //Calling 2nd API only if we get response from 1st API
                 that.state.endpoint1 &&
                 that.state.endpoint1.map((info) => {
                     return that.getImages(info);
@@ -58,7 +57,6 @@ class Home extends Component {
             }
         });
 
-        // https://graph.instagram.com/me/media?fields=id,caption&access_token=YourAccessToken
 
         xhr.open(
             "GET",
@@ -102,7 +100,6 @@ class Home extends Component {
             }
         });
 
-        //graph.instagram.com/17895695668004550?fields=id,media_type,media_url,username,timestamp&access_token=YourAccessToken
         xhr.open(
             "GET",
             this.props.baseUrl +
@@ -204,7 +201,6 @@ class Home extends Component {
         const { classes } = this.props;
         return (
             <div>
-                {/* display the contents only if the user is logged in */}
                 {sessionStorage.getItem("access-token") !== null ? (
                     <div>
                         <Header
@@ -222,7 +218,6 @@ class Home extends Component {
                                         <CardHeader
                                             avatar={<Avatar src={post.profilePic} alt="pic" />}
                                             title={post.username}
-                                            // subheader="03/10/2018 16:07:24"
                                             subheader={this.getPostDate(post.timestamp)}
                                         />
                                         <CardContent>
@@ -253,7 +248,7 @@ class Home extends Component {
                                                 })}
                                             </Typography>
                                             <CardActions disableSpacing>
-                                                <div className="likes">
+                                                <div className="likes" >
                                                     <div
                                                         className={post.likeIcon}
                                                         onClick={() => this.likeClickHandler(post.id)}
